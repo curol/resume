@@ -1,0 +1,31 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "jsonresume-theme-actual": "^0.2.1",
+    "jsonresume-theme-caffeine": "^1.2.3",
+    "jsonresume-theme-class": "^0.1.2",
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-flat": "^0.3.7",
+    "jsonresume-theme-kendall": "^0.2.0",
+    "jsonresume-theme-stackoverflow": "^2.0.0",
+    "jsonresume-theme-stackoverflowed": "^1.1.5",
+    "resume-cli": "^3.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "resume --theme 'stackoverflow' init",
+    "serve": "resume serve --theme caffeine",
+    "export": "resume export --theme actual exports/resume.pdf",
+    "export:stackoverflow": "resume export --theme stackoverflow exports/resume.pdf",
+    "export:elegant": "RESUME_THEME=elegant; resume export --theme $RESUME_THEME exports/resume-$RESUME_THEME.pdf",
+    "export:caffeine": "RESUME_THEME=caffeine; resume export --theme $RESUME_THEME exports/resume-$RESUME_THEME.pdf",
+    "export:actual": "RESUME_THEME=actual; resume export --theme $RESUME_THEME exports/resume-$RESUME_THEME.pdf",
+    "export:kendall": "RESUME_THEME=kendall; resume export --theme $RESUME_THEME exports/resume-$RESUME_THEME.pdf",
+    "export:class": "RESUME_THEME=class; resume export --theme $RESUME_THEME exports/resume-$RESUME_THEME.pdf",
+    "export:flat": "RESUME_THEME=flat; resume export --theme $RESUME_THEME exports/resume-$RESUME_THEME.pdf",
+    "export:stackoverflowed": "RESUME_THEME=stackoverflowed; resume export --theme $RESUME_THEME exports/resume-$RESUME_THEME.pdf",
+    "export-html:stackoverflow": "resume export --theme stackoverflow exports/resume.html"
+  }
+}
