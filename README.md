@@ -16,11 +16,16 @@ View your pdf in `exports/resume.pdf`
 
 ## Themes
 
-### Adding themes
+Change theme for resume.json.
 
 1. Checkout themes at https://jsonresume.org/themes/
 
-2. Add dependency 
-    ```shell
-    npm install jsonresume-theme-<THEME>
-    ```
+2. Add dependency
+
+   ```bash
+   npm install jsonresume-theme-YOUR_THEME
+   ```
+
+3. Serve theme `resume serve --theme YOUR_THEME`
+
+4. Export `resume export --theme YOUR_THEME exports/resume.pdf`
